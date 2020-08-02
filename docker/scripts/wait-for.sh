@@ -16,7 +16,7 @@ usage() {
 
 wait_for() {
   for i in `seq $timeout` ; do
-    nc -z "$host" "$port" > /dev/null 2>&1
+     nc -z "$host" "$port" > /dev/null 2>&1
 
     result=$?
     if [ $result -eq 0 ] ; then

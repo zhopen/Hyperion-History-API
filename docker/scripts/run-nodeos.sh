@@ -13,7 +13,7 @@ echo $2
 # Used when start.sh script is not used
 if [ "$1" != true ]
 then
-  /home/eosio/scripts/wait-for.sh rabbitmq:5672
+  /home/eosio/scripts/wait-for.sh rabbitmq:5672 
   if [ $? -ne 0 ]
   then
     echo "failed to wait for rabbitmq"
@@ -27,6 +27,8 @@ then
     exit 1
   fi
 fi
+
+sleep 40
 
 if [ "$2" = "" ]
 then
