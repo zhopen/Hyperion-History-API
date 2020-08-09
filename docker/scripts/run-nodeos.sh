@@ -28,6 +28,7 @@ then
   fi
 fi
 
+sleep 20
 if [ "$2" = "" ]
 then
   nodeos --genesis-json /home/eosio/config/genesis.json --disable-replay-opts --data-dir /home/eosio/data --config-dir /home/eosio/config &
