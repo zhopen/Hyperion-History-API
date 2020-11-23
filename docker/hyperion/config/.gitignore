@@ -4,3 +4,5 @@
 # Except this file and chains folder
 !.gitignore
 !chains
+!connections.json
+!ecosystem.config.js
