@@ -17,3 +17,15 @@ fi
     command: bash -c "/home/eosio/scripts/run-nodeos.sh true  ${SNAPSHOT:-""}"
 
 ```
+
+使用方法：
+- 创建网络
+```
+./create_network.sh
+```
+- 启动节点
+```
+docker-compose up -d
+```
+
+
